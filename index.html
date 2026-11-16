@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyOS — Study Timer, Progress Heatmap &amp; AI Assistant</title>
+    <meta
+      name="description"
+      content="StudyOS is a precision study tracker with a universal elapsed timer, per-subject countdowns & stopwatches, glowing focus mode, heat bar graphs, notes/PDF vault, and AI study assistant."
+    />
+    <meta property="og:title" content="StudyOS — Study Timer, Progress Heatmap &amp; AI Assistant" />
+    <meta
+      property="og:description"
+      content="StudyOS is a precision study tracker with a universal elapsed timer, per-subject countdowns & stopwatches, glowing focus mode, heat bar graphs, notes/PDF vault, and AI study assistant."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var raw = localStorage.getItem('cadence_study_state_v1');
+          if (!raw) {
+            document.documentElement.classList.add('dark');
+            return;
+          }
+          var parsed = JSON.parse(raw);
+          if (!parsed || !parsed.settings || parsed.settings.theme !== 'light') {
+            document.documentElement.classList.add('dark');
+          }
+          if (parsed && parsed.settings && parsed.settings.colorTheme) {
+            document.documentElement.setAttribute('data-color-theme', parsed.settings.colorTheme);
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-[#090D16] dark:text-slate-100 antialiased selection:bg-blue-600 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

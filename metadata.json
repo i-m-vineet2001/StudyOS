@@ -1,0 +1,6 @@
+{
+  "name": "Cadence",
+  "description": "Precision study tracker with a universal elapsed timer, per-subject countdown timers, one-tap focus mode, and daily, weekly, and monthly study heatmaps.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

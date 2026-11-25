@@ -35,7 +35,7 @@ A fast, glassmorphic study tracker and exam preparation workspace built with Rea
 - Personalized workspace greeting (`"Hi, <Your Name>"`).
 - **Collapsible Circular Quick Controls**: Expandable circular button for **Color Themes** (*Sapphire*, *Lime & Black*, *Emerald*, *Indigo*, *Amber*, *Rose*), **Completion Chime**, and **Light / Dark Mode**.
 - Full **Settings Modal** with adjustable **Glow Intensity** slider and daily goal minutes.
-- **Portable JSON Backup**: Export and restore all subjects, sessions, notes, and preferences via `History → Export JSON / Import JSON`.
+- **Session History & Spreadsheet Export**: Sessions save automatically in browser storage; view 7-day and 30-day daily averages, and export a CSV snapshot (including a currently running session) for Excel. Export and restore all app data with `History → Export JSON / Import JSON`.
 
 ---
 

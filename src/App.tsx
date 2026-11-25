@@ -162,7 +162,7 @@ export default function App() {
         {activeView === 'history' && (
           <HistoryBackupView
             store={store}
-            sessions={store.sessions}
+            sessions={effectiveSessions}
             subjects={store.subjects}
             settings={store.settings}
             onDeleteSession={deleteSession}
